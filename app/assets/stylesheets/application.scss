@@ -1,0 +1,239 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+  box-sizing: border-box;
+}
+
+#nav_bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#logo_image{
+    width:100px;
+    height:50px;
+    margin-left: 20px;
+}
+
+.nav-bar{
+    list-style-type: none;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    width:90%;
+}
+
+ul{
+    margin:0px!important;
+}
+
+.nav-bar>li{
+    display:inline-block;
+    font-size:17px;
+    font-weight:600;
+}
+
+.nav-bar>li>a{
+    text-decoration:none;
+    color:black;
+    padding:17px 20px;
+}
+
+.nav-bar>li>a:hover{
+    color:white;
+    background-color:blue;
+}
+.subnav-company{
+    list-style-type: none;
+    display:none;
+    justify-content:flex-end;
+    padding-right:335px;
+    align-items:center;
+    height:40px;
+    width:100%;
+    z-index:99;
+    position:absolute;
+    background-color:blue;
+    color:white;
+    font-size:14px;
+}
+
+.subnav-company>li>a{
+    text-decoration:none;
+    color:white;
+    padding: 0px 15px;
+}
+
+.subnav-company>li>a:hover{
+    padding-bottom:9px;
+    border-bottom:3px solid white;
+}
+
+.subnav-businessarea{
+    list-style-type: none;
+    display:none;
+    justify-content:flex-end;
+    align-items:center;
+    width:100%;
+    height:40px;
+    padding-right:315px;
+    z-index:99;
+    position:absolute;
+    background-color:blue;
+    color:white;
+}
+.nav-content{
+    padding:14px 0px;
+}
+
+.subnav-businessarea>li>a{
+    text-decoration:none;
+    color:white;
+    padding: 0px 15px;
+}
+
+.subnav-businessarea>li>a:hover{
+    padding-bottom:9px;
+    border-bottom:3px solid white;
+}
+
+.subnav-product-introduce{
+    list-style-type: none;
+    display:none;
+    justify-content:flex-end;
+    align-items:center;
+    width:100%;
+    height:40px;
+    z-index:99;
+    position:absolute;
+    background-color:blue;
+    color:white;
+    padding-right:195px;
+}
+
+
+.subnav-product-introduce>li>a{
+    text-decoration:none;
+    color:white;
+    padding: 0px 15px;
+}
+
+.subnav-product-introduce>li>a:hover{
+    padding-bottom:9px;
+    border-bottom:3px solid white;
+}
+
+.subnav-product-sale{
+    list-style-type: none;
+    display:none;
+    align-items:center;
+    justify-content:flex-end;
+    width:100%;
+    margin-left:500px;
+    height:40px;
+    z-index:99;
+    position:absolute;
+    background-color:blue;
+    color:white;
+    padding-right:207px;
+}
+
+.subnav-product-sale>li>a{
+    text-decoration:none;
+    color:white;
+    padding: 0px 15px;
+}
+
+.subnav-product-sale>li>a:hover{
+    padding-bottom:9px;
+    border-bottom:3px solid white;
+}
+
+.subnav-support{
+    list-style-type: none;
+    display:none;
+    align-items:center;
+    justify-content:flex-end;
+    width:100%;
+    margin-left:500px;
+    height:40px;
+    z-index:99;
+    position:absolute;
+    background-color:blue;
+    color:white;
+    padding-right:30px;
+}
+
+
+.subnav-support>li>a{
+    text-decoration:none;
+    color:white;
+    padding: 0px 15px;
+}
+
+.subnav-support>li>a:hover{
+    padding-bottom:9px;
+    border-bottom:3px solid white;
+}
+
+.subnav-content{
+    margin:0px 5px;
+}
+
+.main{
+    border-top:0.5px solid lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-size:cover;
+    height:100vh;
+    width:100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    position:relative;
+    z-index:10;
+}
+.main_content_box{
+    padding-left:150px;
+    padding-top:180px;
+}
+
+
+.font-middle{
+    font-size:22px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.font-large{
+    font-size:32px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:500;
+}
+
+.main_color{
+    color:blue;
+}
+
+.current_page{
+    color:blue!important;
+}
+
+footer{
+    width:100%;
+}

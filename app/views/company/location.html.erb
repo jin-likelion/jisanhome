@@ -1,0 +1,90 @@
+<div class="company_banner">
+    <div class="banner_content">
+        <p class="font_double_large" style="margin-bottom:8px;  color:#333;">회사소개</p>
+        <p class="main_double_line"></p>
+        <p class="font_double_middle">지산화학(주)를 소개합니다.</p>
+    </div>
+</div>
+<div class="category">
+    <div class="category_content_box">
+        <p class="category_content">
+            <span class="category_content_name">HOME</span>
+            <span class="category_content_img">></span>
+        </p>
+        <p class="category_content">
+            <span class="category_content_name">회사소개</span>
+            <span class="category_content_img">></span>
+        </p>
+        <p class="category_content_last">
+            <span class="category_content_name current_page">오시는길</span>
+            <span class="category_content_img">></span>
+        </p>
+    </div>
+</div>
+<div class="container">
+    
+    <div class="main_content">
+        <p class="font-large ">오시는길</p>
+        <p class="main_line"></p>
+        <p class="font-middle">지산화학(주)는 항상 고객과 함께합니다.</p>
+    </div>
+    
+    <div id="map"></div>
+    
+    <div class="ride_title">
+        <span>지하철</span>
+        <span>버 스</span>
+    </div>
+    <div class="location_info">
+        <div class="subway_info">
+            <img src="/subway_icon2.png"></img>
+            <div class="subway_info_2">
+                <p><span class="subway_1">1호선</span><span class="subway_2">2호선</span>신도림역 6번 출구에서 도보 약 1.1km</p>
+              
+                <p><span class="subway_2">2호선</span>도림천역 1번 출구에서 도보 약 600m</p>
+                <p><span class="subway_2">2호선</span>문래역 1번 출구에서 도보 약 1.2km</p>
+                
+            </div>
+        </div>
+        
+        <div class="bus_info">
+            <img src="/bus_icon.png"></img>
+            <div class="bus_info_2">
+                <p><span class="bus_slow">지선</span> 6649, 6640A, 6637, 6625, 6516, 88-1, 83, 11-1</p>
+                <p><span class="bus_speed">간선</span> 641, 670</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=<%=ENV['NAVER_CLIENT_ID']%>&callback=initMap"></script>
+    <script type="text/javascript">
+        
+            var map = null;
+    
+            function initMap() {
+                var position = new naver.maps.LatLng(37.514940, 126.886036);
+                var map = new naver.maps.Map('map', {
+                    center: position,
+                    zoom: 10
+                });
+                
+                var marker = new naver.maps.Marker({
+                    position: position,
+                    map: map,
+                    icon: {
+                        url: '/pin_icon.png', //50, 68 크기의 원본 이미지
+                        size: new naver.maps.Size(34, 34),
+                        scaledSize: new naver.maps.Size(30, 34),
+                        origin: new naver.maps.Point(0, 0),
+                        anchor: new naver.maps.Point(12, 34)
+                    }
+                });
+            }
+            
+        // window.onload = function() {
+        //     if(!window.location.hash) {
+        //         window.location = window.location + '#loaded';
+        //         window.location.reload();
+        //     }
+        // }
+    </script>
+</div>
