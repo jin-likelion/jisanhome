@@ -1,61 +1,28 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <title>지산화학(주)</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, user-scalable=no" charset="UTF-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<% if request.path.split('/')[1] != "en"%>
+    <html lang="ko">
+    <head>
+    <title>지산화학(주)</title>
+<% else %>
+    <html lang="en">
+    <head>
+    <title>JISAN Chem, LTD</title>
+<% end %>
+        
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
- </head>
+</head>
 <body>
-  <nav id="nav_bar">
-    <a href="/"><img id="logo_image" src="/jisan_logo_image.jpg" alt="지산화학(주) 로고"></img></a>
-    <ul class="nav-bar">
-      <li id="nav-company" class="nav-content"><a href="/company/ceo">회사소개</a></li>
-      <li id="nav-businessarea" class="nav-content"><a href="/businessarea/introduce">사업분야</a></li>
-      <li id="nav-product-introduce" class="nav-content"><a href="/product/introduce">제품소개</a></li>
-      <li id="nav-product-sale" class="nav-content"><a href="/product/sales">제품구매</a></li>
-      <li id="nav-support" class="nav-content"><a href="/support/notice">고객지원</a></li>
-      <li id="nav-content" class="nav-content"><a href="./eng/company/introduce">ENGLISH</a></li>
-    </ul>
-  </nav>
-  <div class="subnav">
-    <ul class="subnav-company">
-      <li class="subnav-content"><a href="/company/ceo">인사말</a></li>
-      <li class="subnav-content"><a href="/company/history">회사연혁</a></li>
-      <li class="subnav-content"><a href="/company/vision">VISION</a></li>
-      <li class="subnav-content"><a href="/company/finance">재무정보</a></li>
-      <li class="subnav-content"><a href="/company/location">오시는 길</a></li>
-    </ul>
-    
-    <ul class="subnav-businessarea">
-      <li class="subnav-content"><a href="/businessarea/introduce">사업소개</a></li>
-      <li class="subnav-content"><a href="/businessarea/partners">관계사 및 고객사</a></li>
-    </ul>
-    
-    <ul class="subnav-product-introduce">
-      <li class="subnav-content"><a href="/product/introduce">미정</a></li>
-    </ul>
-    
-    <ul class="subnav-product-sale">
-      <li class="subnav-content"><a href="/product/sales">판매담당자</a></li>
-    </ul>
-    
-    <ul class="subnav-support">
-      <li class="subnav-content"><a href="/support/notice">공지사항</a></li>
-      <li class="subnav-content"><a href="/support/faq">FAQ</a></li>
-      <li class="subnav-content"><a href="/support/contact">Contact</a></li>
-    </ul>
-  </div>
     <%= yield %>
     <hr>
   <div class="container">

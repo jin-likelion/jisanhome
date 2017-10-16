@@ -15,13 +15,38 @@ Rails.application.routes.draw do
   get 'businessarea/partners'
   
 # 상품소개 및 상품구매
-  get 'product/introduce'
+  get 'product/chemical'
+  get 'product/life'
   get 'product/sales'
   
 # 고객지원
   get 'support/notice'
   get 'support/faq'
   get 'support/contact'
+  
+# 홈페이지 첫화면 (EN)
+  get 'en/main/index' => 'en#main'
+  
+# 회사소개
+  get 'en/company/ceo' => 'en#ceo'
+  get 'en/company/history' => 'en#history'
+  get 'en/company/vision' => 'en#vision'
+  get 'en/company/finance' => 'en#finance'
+  get 'en/company/location' => 'en#location'
+
+# 사업분야
+  get 'en/businessarea/introduce' => 'en#introduce'
+  get 'en/businessarea/partners' => 'en#partners'
+  
+# 상품소개 및 상품구매
+  get 'en/product/chemical' => 'en#chemical'
+  get 'en/product/life' => 'en#life'
+  get 'en/product/sales' => 'en#sales'
+  
+# 고객지원
+  get 'en/support/notice' => 'en#notice'
+  get 'en/support/faq' => 'en#faq'
+  get 'en/support/contact' => 'en#contact'
   
 
   # The priority is based upon order of creation: first created -> highest priority.

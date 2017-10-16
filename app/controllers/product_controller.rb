@@ -1,5 +1,8 @@
 class ProductController < ApplicationController
-  def introduce
+  def life
+  end
+  
+  def chemical
   end
 
   def sales
