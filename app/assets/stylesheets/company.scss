@@ -158,6 +158,47 @@
     justify-content:center;
 }
 
+////// finance page
+.middle_title_arrow{
+    color:blue; 
+    font-size:24px;
+    margin-left:75px;
+    margin-right:5px;
+}
+.table_scope{
+    width:83.33%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:40px;
+}
+.table_scope:before{
+    content:'';
+    display:inline-block;
+    width:10%;
+}
+.table_scope:after{
+    content:'';
+    display:inline-block;
+    width:10%;
+}
+.table{
+    table:100%;
+    font-size: 15px;
+    table-layout: fixed;
+}
+
+.table_th{
+    text-align: center;
+    font-weight: normal;
+}
+
+.table_top{
+    border-top:2px solid blue !important;
+}
+
+.tbody > tr > th, td{
+    text-align: center;
+}
 
 ////// map page
 .ride_title{

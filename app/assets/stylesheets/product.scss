@@ -28,3 +28,33 @@
     border-top:1px solid lightgray;
     border-bottom:1px solid lightgray;
 }
+.sp_box{
+    display:inline-block;
+    margin-left:40px;
+}
+
+.sp_box_top{
+    width:300px;
+    height:60px;
+    background-color:blue;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.sp_box_top_content{
+    color:white;
+    margin:0px!important;
+    font-size:20px;
+}
+
+.sp_box_bottom{
+    display:block;
+    width:300px;
+    height:200px;
+    border:1px solid lightgray;
+}
+
+.sp_box_bottom_content{
+    margin-left:20px;
+}
