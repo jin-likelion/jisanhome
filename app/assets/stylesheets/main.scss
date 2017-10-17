@@ -2,95 +2,95 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
+// .carousel-fade .carousel-inner .item {
+//   opacity: 0;
+//   transition-property: opacity;
+// }
 
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
+// .carousel-fade .carousel-inner .active {
+//   opacity: 1;
+// }
 
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
+// .carousel-fade .carousel-inner .active.left,
+// .carousel-fade .carousel-inner .active.right {
+//   left: 0;
+//   opacity: 0;
+//   z-index: 1;
+// }
 
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
+// .carousel-fade .carousel-inner .next.left,
+// .carousel-fade .carousel-inner .prev.right {
+//   opacity: 1;
+// }
 
-.carousel-fade .carousel-control {
-  z-index: 2;
-} 
-@media all and (transform-3d), (-webkit-transform-3d) {
-    .carousel-fade .carousel-inner > .item.next,
-    .carousel-fade .carousel-inner > .item.active.right {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    .carousel-fade .carousel-inner > .item.prev,
-    .carousel-fade .carousel-inner > .item.active.left {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-    .carousel-fade .carousel-inner > .item.next.left,
-    .carousel-fade .carousel-inner > .item.prev.right,
-    .carousel-fade .carousel-inner > .item.active {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
-} 
-.carousel-content {
-font-size:20px;
-color:blue;
-padding-top:200px;
-padding-left:250px;
-margin:0 !important;
-}
+// .carousel-fade .carousel-control {
+//   z-index: 2;
+// } 
+// @media all and (transform-3d), (-webkit-transform-3d) {
+//     .carousel-fade .carousel-inner > .item.next,
+//     .carousel-fade .carousel-inner > .item.active.right {
+//       opacity: 0;
+//       -webkit-transform: translate3d(0, 0, 0);
+//               transform: translate3d(0, 0, 0);
+//     }
+//     .carousel-fade .carousel-inner > .item.prev,
+//     .carousel-fade .carousel-inner > .item.active.left {
+//       opacity: 0;
+//       -webkit-transform: translate3d(0, 0, 0);
+//               transform: translate3d(0, 0, 0);
+//     }
+//     .carousel-fade .carousel-inner > .item.next.left,
+//     .carousel-fade .carousel-inner > .item.prev.right,
+//     .carousel-fade .carousel-inner > .item.active {
+//       opacity: 1;
+//       -webkit-transform: translate3d(0, 0, 0);
+//               transform: translate3d(0, 0, 0);
+//     }
+// } 
+// .carousel-content {
+// font-size:20px;
+// color:blue;
+// padding-top:200px;
+// padding-left:250px;
+// margin:0 !important;
+// }
 
-.carousel-content > .small-font {
-font-size: 40px;
-margin-top:0!important;
-font-family: 'Lato', sans-serif;
-font-weight:700;
-}
+// .carousel-content > .small-font {
+// font-size: 40px;
+// margin-top:0!important;
+// font-family: 'Lato', sans-serif;
+// font-weight:700;
+// }
 
-.index_main_line{
-    border-top:2px solid blue;
-    width:330px;
-}
+// .index_main_line{
+//     border-top:2px solid blue;
+//     width:330px;
+// }
 
-html,
-body,
-.carousel,
-.carousel-inner,
-.carousel-inner .item {
-  height: 100%;
-} 
-.item:nth-child(1) {
-  background: url('/main_background.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+// html,
+// body,
+// .carousel,
+// .carousel-inner,
+// .carousel-inner .item {
+//   height: 100%;
+// } 
+// .item:nth-child(1) {
+//   background: url('/main_background.png');
+//   background-size: cover;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+// }
 
-.item:nth-child(2) {
-  background: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/D2ROMCUEIV.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+// .item:nth-child(2) {
+//   background: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/D2ROMCUEIV.jpg');
+//   background-size: cover;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+// }
 
-.item:nth-child(3) {
-  background: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PU9HHZB5QW.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+// .item:nth-child(3) {
+//   background: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PU9HHZB5QW.jpg');
+//   background-size: cover;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+// }

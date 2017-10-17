@@ -2,57 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.support_banner{
-    height:40vh;
-    width:100%;
-    background: url('/support_banner.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display:flex;
-    align-items:center;
-    border-bottom:1px solid lightgray;
-}
+// .support_banner{
+//     height:40vh;
+//     width:100%;
+//     background: url('/support_banner.png');
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     display:flex;
+//     align-items:center;
+//     border-bottom:1px solid lightgray;
+// }
 
-.card-header{
-    border-left:5px solid blue;
-    background-color:white!important;
-    border-radius:0px!important;
-    padding-bottom:10px!important;
-}
+// .card-header{
+//     border-left:5px solid blue;
+//     background-color:white!important;
+//     border-radius:0px!important;
+//     padding-bottom:10px!important;
+// }
 
-.mb-0>a{
-    color:blue!important;   
-    font-family: 'Noto Sans KR', sans-serif;
+// .mb-0>a{
+//     color:blue!important;   
+//     font-family: 'Noto Sans KR', sans-serif;
 
-    &:hover{
-        text-decoration:none;
-    }
-}
+//     &:hover{
+//         text-decoration:none;
+//     }
+// }
 
-.card{
-    margin-bottom:15px;
-}
+// .card{
+//     margin-bottom:15px;
+// }
 
 
-#accordion{
-    margin-bottom:80px!important;
-}
+// #accordion{
+//     margin-bottom:80px!important;
+// }
 
-.faq_line{
-    border-top:3px solid blue;
-    width:230px;
-}
+// .faq_line{
+//     border-top:3px solid blue;
+//     width:230px;
+// }
 
-.font_double_large{
-    font-size:55px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight:500;
-}
+// .font_double_large{
+//     font-size:55px;
+//     font-family: 'Noto Sans KR', sans-serif;
+//     font-weight:500;
+// }
 
-.font_double_middle{
-    font-size:24px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight:210;
-    letter-spacing: -1px;
-}
+// .font_double_middle{
+//     font-size:24px;
+//     font-family: 'Noto Sans KR', sans-serif;
+//     font-weight:210;
+//     letter-spacing: -1px;
+// }
