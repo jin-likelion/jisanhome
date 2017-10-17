@@ -1,59 +1,5 @@
 <%= render './layouts/nav' %>
 
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=<%=ENV['NAVER_CLIENT_ID']%>&callback=initMap"></script>
-<script type="text/javascript">
-    window.onload = function() {
-            // if(!window.location.hash) {
-            //     window.location = window.location + '#loaded';
-            //     window.location.reload();
-            // }
-    var map = null;
-
-    function initMap() {
-        var position = new naver.maps.LatLng(37.514940, 126.886036);
-        var map = new naver.maps.Map('map', {
-            center: position,
-            zoom: 10
-        });
-        
-        var marker = new naver.maps.Marker({
-            position: position,
-            map: map,
-            icon: {
-                url: '/pin_icon.png', //50, 68 크기의 원본 이미지
-                size: new naver.maps.Size(34, 34),
-                scaledSize: new naver.maps.Size(30, 34),
-                origin: new naver.maps.Point(0, 0),
-                anchor: new naver.maps.Point(12, 34)
-            }
-        });
-    }
-        }
-        
-    var map = null;
-
-    function initMap() {
-        var position = new naver.maps.LatLng(37.514940, 126.886036);
-        var map = new naver.maps.Map('map', {
-            center: position,
-            zoom: 10
-        });
-        
-        var marker = new naver.maps.Marker({
-            position: position,
-            map: map,
-            icon: {
-                url: '/pin_icon.png', //50, 68 크기의 원본 이미지
-                size: new naver.maps.Size(34, 34),
-                scaledSize: new naver.maps.Size(30, 34),
-                origin: new naver.maps.Point(0, 0),
-                anchor: new naver.maps.Point(12, 34)
-            }
-        });
-    }
-
-</script>
-
 <div class="company_banner">
     <div class="banner_content">
         <p class="font_double_large" style="margin-bottom:8px;  color:#333;">회사소개</p>
@@ -112,3 +58,24 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    var map = null;
+    var position = new naver.maps.LatLng(37.514940, 126.886036);
+    var map = new naver.maps.Map('map', {
+        center: position,
+        zoom: 10
+    });
+    
+    var marker = new naver.maps.Marker({
+        position: position,
+        map: map,
+        icon: {
+            url: '/pin_icon.png', //50, 68 크기의 원본 이미지
+            size: new naver.maps.Size(34, 34),
+            scaledSize: new naver.maps.Size(30, 34),
+            origin: new naver.maps.Point(0, 0),
+            anchor: new naver.maps.Point(12, 34)
+        }
+    });
+</script>
