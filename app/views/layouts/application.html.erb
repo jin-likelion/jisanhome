@@ -23,17 +23,25 @@
 
 </head>
 <body>
-    <%= yield %>
-    <hr>
-  <div class="container">
+        <%= yield %>
+    
     <footer>
-      <div class="footer_content">
-        <p>고객문의 | 제품담당자</p>
-        <p>서울특별시 영등포구 경인로 71길 70, 1202-4호(문래동 5가, 벽산디지털밸리) | 대표전화 : 02-2678-8257</p>
-        <p>Copyright © 2017 JISAN Chem, LTD All Rights Reserved.</p>
-      </div>
+        <div class="container">
+            <div class="footer_content">
+                <p class ="footer_link">
+                    <a href="mailto:yschoi@jisanchem.com" >
+                        메일문의
+                    </a>  |  
+                    <a href="/product/sales" style="margin-left:10px;">
+                        제품담당자    
+                    </a>
+                </p>
+                <p>서울특별시 영등포구 경인로 71길 70, 1202-4호(문래동 5가, 벽산디지털밸리) | 대표전화 : 02-2678-8257</p>
+                <p>Copyright © 2017 JISAN Chem, LTD All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
-  </div>
+  
 <script>
 $(document).ready(function(){
     $("#nav-company").hover(function(){

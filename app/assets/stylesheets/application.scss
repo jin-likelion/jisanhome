@@ -46,7 +46,7 @@ ul{
 
 .nav-bar>li{
     display:inline-block;
-    font-size:17px;
+    font-size:13px;
     font-weight:600;
 }
 
@@ -64,7 +64,7 @@ ul{
     list-style-type: none;
     display:none;
     justify-content:flex-end;
-    padding-right:335px;
+    padding-right:296px;
     align-items:center;
     height:40px;
     width:100%;
@@ -78,7 +78,7 @@ ul{
 .subnav-company>li>a{
     text-decoration:none;
     color:white;
-    padding: 0px 15px;
+    padding: 0px 8px;
 }
 
 .subnav-company>li>a:hover{
@@ -93,11 +93,12 @@ ul{
     align-items:center;
     width:100%;
     height:40px;
-    padding-right:335px;
+    padding-right:240px;
     z-index:99;
     position:absolute;
     background-color:blue;
     color:white;
+    font-size:14px;
 }
 .nav-content{
     padding:14px 0px;
@@ -106,7 +107,7 @@ ul{
 .subnav-businessarea>li>a{
     text-decoration:none;
     color:white;
-    padding: 0px 15px;
+    padding: 0px 8px;
 }
 
 .subnav-businessarea>li>a:hover{
@@ -125,14 +126,15 @@ ul{
     position:absolute;
     background-color:blue;
     color:white;
-    padding-right:250px;
+    padding-right:181px;
+    font-size:14px;
 }
 
 
 .subnav-product-introduce>li>a{
     text-decoration:none;
     color:white;
-    padding: 0px 15px;
+    padding: 0px 8px;
 }
 
 .subnav-product-introduce>li>a:hover{
@@ -152,13 +154,14 @@ ul{
     position:absolute;
     background-color:blue;
     color:white;
-    padding-right:207px;
+    padding-right:182px;
+    font-size:14px;
 }
 
 .subnav-product-sale>li>a{
     text-decoration:none;
     color:white;
-    padding: 0px 15px;
+    padding: 0px 8px;
 }
 
 .subnav-product-sale>li>a:hover{
@@ -178,14 +181,15 @@ ul{
     position:absolute;
     background-color:blue;
     color:white;
-    padding-right:80px;
+    padding-right:49px;
+    font-size:14px;
 }
 
 
 .subnav-support>li>a{
     text-decoration:none;
     color:white;
-    padding: 0px 15px;
+    padding: 0px 8px;
 }
 
 .subnav-support>li>a:hover{
@@ -237,6 +241,28 @@ ul{
 
 footer{
     width:100%;
+    border-top: 1px solid lightgray;
+}
+
+.footer_content{
+    height:150px;
+    margin-top:25px;
+}
+
+.footer_content > p{
+    font-size:17px;
+    margin-bottom:20px;
+}
+.footer_link{
+    color:gray;
+}
+.footer_content > p > a{
+    color:lightgray;
+    margin-right: 10px;
+    &:hover{
+        color:blue;
+        text-decoration:none;
+    }
 }
 
 .table_center{
