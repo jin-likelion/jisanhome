@@ -15,23 +15,27 @@
 }
 
 .card-header{
-    border-left:5px solid blue;
+    border-left:10px solid blue;
     background-color:white!important;
     border-radius:0px!important;
     padding-bottom:10px!important;
 }
 
 .mb-0>a{
-    color:blue!important;   
+    color: #333;
+    font-size: 18px;
     font-family: 'Noto Sans KR', sans-serif;
 
     &:hover{
         text-decoration:none;
+        color: #333;
     }
 }
 
 .card{
     margin-bottom:15px;
+    width: 80%;
+    margin-left:67px;
 }
 
 
