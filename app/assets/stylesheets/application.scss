@@ -26,11 +26,14 @@
     justify-content:space-between;
     align-items:center;
 }
+
 #logo_image{
     width:100px;
     height:50px;
     margin-left: 60px;
-    
+    display:block;
+    float:left;
+    clear:both;
 }
 
 .nav-bar{
@@ -38,7 +41,9 @@
     display:flex;
     justify-content:flex-end;
     align-items:center;
-    width:90%;
+    width:80%;
+    right:0px;
+    
 }
 
 ul{
@@ -75,6 +80,7 @@ ul{
     color:white;
     font-size:13px;
 }
+
 
 .subnav-company>li>a{
     text-decoration:none;
